@@ -56,7 +56,7 @@ public class Main {
         return true;
     }
 
-
+    // Question 3. Write a program to check if string contains duplicates.
 
 
 
