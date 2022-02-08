@@ -22,12 +22,19 @@ public class Main {
             end --;
         }
         if(isPalindrome){
-            System.out.println("Palindrome");
+            System.out.println("Palindrome");;
         }
         else{
             System.out.println("Not a Palindrome");
         }
+
     }
+
+
+
+
+
+
 
     /// region Assignment Code
     // Question 1: Write a program find if String is Palindrome?
