@@ -70,6 +70,7 @@ public class Main {
             if(characters.contains(current)){
                 if(!duplicates.contains(current)){
                     duplicates += current;
+                    System.out.println(duplicates);
                 }
             }
             characters += current;
