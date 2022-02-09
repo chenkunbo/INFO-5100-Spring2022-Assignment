@@ -3,6 +3,7 @@ package com.company;
 
 import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Scanner;
 import java.util.Set;
 
 public class Main {
@@ -57,9 +58,10 @@ public class Main {
         System.out.println(leapYear(year1));
         System.out.println(leapYear(year2));
 
-        // Question 6: Write a program to calculate the monthly telephone bills
-
-
+        // Question 6: Write a program to calculate the monthly telephone bills.
+        int calls = 135;
+        System.out.println("Question 6: Write a program to calculate the monthly telephone bills.");
+        System.out.println(telBill(calls));
 
 
 
@@ -127,23 +129,22 @@ public class Main {
     // Plus $ 0.50 per call for next 50 calls.
     // Plus $ 0.40 per call for any call beyond 200 calls.
     // Use Switch Statement in the function.
-    private static float telBill(int[] calls){
-
-        switch(calls){
-            case 1:
-                float telbill = 200;
-                System.out.println("telBill = " + telbill);
-            case 2:
-                float telbill = 200 + 0.6 (calls - 100);
-                System.out.println("telBill = " + telbill);
-            case 3:
-                float telbill = 200;
-                System.out.println("telBill = " + telbill);
-
-                break;
-            default:
-                throw new IllegalStateException("Unexpected value: " + calls);
+    private static double telBill(int calls){
+        double telBill = 0;
+        if(calls <= 100){
+            telBill = 200;
         }
+        else if(calls <= 150){
+            telBill = 200 + 0.60 * ( calls - 100 );
+        }
+        else if(calls <= 200){
+            telBill = 200 + 0.60 * 50 + 0.50 * ( calls - 150 );
+        }
+        else{
+            telBill = 200 + 0.60 * 50 + 0.50 * 50 + 0.40 * ( calls - 200);
+        }
+
+        return telBill;
     }
 
 
