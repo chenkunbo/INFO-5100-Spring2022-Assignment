@@ -127,6 +127,24 @@ public class Main {
     // Plus $ 0.50 per call for next 50 calls.
     // Plus $ 0.40 per call for any call beyond 200 calls.
     // Use Switch Statement in the function.
+    private static float telBill(int[] calls){
+
+        switch(calls){
+            case 1:
+                float telbill = 200;
+                System.out.println("telBill = " + telbill);
+            case 2:
+                float telbill = 200 + 0.6 (calls - 100);
+                System.out.println("telBill = " + telbill);
+            case 3:
+                float telbill = 200;
+                System.out.println("telBill = " + telbill);
+
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + calls);
+        }
+    }
 
 
 
