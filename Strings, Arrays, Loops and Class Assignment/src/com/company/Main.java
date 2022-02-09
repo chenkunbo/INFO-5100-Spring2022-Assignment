@@ -62,7 +62,7 @@ public class Main {
 
         //Question 7: Given two strings ransomNote and magazine,
         // return true if ransomNote can be constructed from magazine and false otherwise.
-
+        System.out.println("Question 7: ransomNote.");
 
 
 
