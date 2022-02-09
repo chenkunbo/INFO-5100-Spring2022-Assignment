@@ -60,12 +60,14 @@ public class Main {
         System.out.println("Question 6: Write a program to calculate the monthly telephone bills.");
         System.out.println(telBill(calls));
 
-        //Question 7: Given two strings ransomNote and magazine,
+        // Question 7: Given two strings ransomNote and magazine,
         // return true if ransomNote can be constructed from magazine and false otherwise.
         String magazine = "two plus three not equal to four.";
         String ransomNote = "two plus two equals to four";
         System.out.println("Question 7: ransomNote.");
         System.out.println(checkMagazine(ransomNote, magazine));
+
+
 
         // Question 8 : Write a program that prompts the user’s grade.
         // Your program should display the corresponding meaning of grade as per the following table
@@ -97,6 +99,11 @@ public class Main {
 
         System.out.println(testResult + " is " + grade);
 
+
+
+        // Question 9: Write a program to create a book class.
+        // The Book class would have following private variables: String name; int bookID; String genres; double price;
+        // Create a constructor to initialize the values. Create getters and setters for variables.
 
 
 
