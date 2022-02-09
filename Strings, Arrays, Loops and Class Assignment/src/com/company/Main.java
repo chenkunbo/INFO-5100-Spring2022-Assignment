@@ -43,9 +43,13 @@ public class Main {
         System.out.println("Question 3. Write a program to check if string contains duplicates.");
         System.out.println(checkDupChars(str2));
 
+        // Question 4: Write a program to check if two strings are anagrams.
+
+
+
+
 
     }
-
 
     /// region assignment code
     // Question2: Write a program to check if a string has all unique characters.
@@ -77,6 +81,7 @@ public class Main {
         return duplicates;
     }
 
+    // Question 4: Write a program to check if two strings are anagrams.
 
 
 
