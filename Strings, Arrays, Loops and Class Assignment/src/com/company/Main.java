@@ -1,6 +1,7 @@
 package com.company;
 
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -44,8 +45,10 @@ public class Main {
         System.out.println(checkDupChars(str2));
 
         // Question 4: Write a program to check if two strings are anagrams.
-
-
+        String str3 = "java";
+        String str4 = "avaj";
+        System.out.println("Question 4: Write a program to check if two strings are anagrams.");
+        System.out.println("Both strings are anagrams : " + anagramCheck(str3, str4));
 
 
 
@@ -82,7 +85,15 @@ public class Main {
     }
 
     // Question 4: Write a program to check if two strings are anagrams.
+    private static boolean anagramCheck(String str1, String str2){
+        char[] charArrayFromString1 = str1.toCharArray();
+        char[] charArrayFromString2 = str2.toCharArray();
+        Arrays.sort(charArrayFromString1);
+        Arrays.sort(charArrayFromString2);
 
+        return Arrays.equals(charArrayFromString1, charArrayFromString2);
+
+    }
 
 
 
