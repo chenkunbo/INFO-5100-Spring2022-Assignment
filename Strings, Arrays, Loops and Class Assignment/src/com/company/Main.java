@@ -70,28 +70,30 @@ public class Main {
         // Question 8 : Write a program that prompts the user’s grade.
         // Your program should display the corresponding meaning of grade as per the following table
         // Grade Meaning: A. Excellent; B. Good; C. Average; D. Deficient; F. Failing
-        String testResult = "";
+        String testResult;
         char grade;
 
         Scanner in = new Scanner(System.in);
         System.out.println("Enter a test result : ");
-        testResult = in.next();
+        testResult = in.nextLine();
 
-        if(testResult == "Excellent"){
+        if(Objects.equals(testResult, "Excellent")){
             grade = 'A';
         }
-        else if(testResult == "Good"){
+        else if(Objects.equals(testResult, "Good")){
             grade = 'B';
         }
-        else if(testResult == "Average"){
+        else if(Objects.equals(testResult, "Average")){
             grade = 'C';
         }
-        else if(testResult == "Deficient"){
+        else if(Objects.equals(testResult, "Deficient")){
             grade = 'D';
         }
         else{
             grade = 'F';
         }
+
+        System.out.println("Question 8: Write a program that prompts the user’s grade.");
         System.out.println(testResult + " is " + grade);
 
 
