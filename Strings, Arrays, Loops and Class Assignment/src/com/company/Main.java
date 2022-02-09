@@ -67,14 +67,12 @@ public class Main {
 
         for(int i = 0; i < str.length(); i ++){
             String current = Character.toString(str.charAt(i));
-            if(!characters.contains(current)){
-                if(duplicates.contains(current)){
+            if(characters.contains(current)){
+                if(!duplicates.contains(current)){
                     duplicates += current;
-                    System.out.println(duplicates);
                 }
             }
             characters += current;
-
         }
         return duplicates;
     }
