@@ -38,6 +38,10 @@ public class Main {
         System.out.println("Question2: Write a program to check if a string has all unique characters.");
         System.out.println(hasUniqueChars(str1));
 
+        // Question 3. Write a program to check if string contains duplicates.
+        String str2 = "How many duplicates are there?";
+        System.out.println("Question 3. Write a program to check if string contains duplicates.");
+        System.out.println(checkDupChars(str2));
 
 
     }
@@ -57,7 +61,21 @@ public class Main {
     }
 
     // Question 3. Write a program to check if string contains duplicates.
+    private static String checkDupChars(String str){
+        String characters = "";
+        String duplicates = "";
 
+        for(int i = 0; i < str.length(); i ++){
+            String current = Character.toString(str.charAt(i));
+            if(characters.contains(current)){
+                if(!duplicates.contains(current)){
+                    duplicates += current;
+                }
+            }
+            characters += current;
+        }
+        return duplicates;
+    }
 
 
 
