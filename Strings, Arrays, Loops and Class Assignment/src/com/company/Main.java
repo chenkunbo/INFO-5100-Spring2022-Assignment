@@ -50,6 +50,18 @@ public class Main {
         System.out.println("Question 4: Write a program to check if two strings are anagrams.");
         System.out.println("Both strings are anagrams : " + anagramCheck(str3, str4));
 
+        // Question 5:  Write a program to determine whether the year is a leap year or not.
+        int year1 = 2200;
+        int year2 = 2020;
+        System.out.println("Question 5:  Write a program to determine whether the year is a leap year or not.");
+        System.out.println(leapYear(year1));
+        System.out.println(leapYear(year2));
+
+
+
+
+
+
 
 
     }
@@ -94,6 +106,24 @@ public class Main {
         return Arrays.equals(charArrayFromString1, charArrayFromString2);
 
     }
+
+    // Question 5:  Write a program to determine whether the year is a leap year or not.
+    private static int leapYear(int year){
+        if(year % 400 == 0){
+            System.out.println(" Leap year");
+        }
+        else if(year % 4 == 0 && year % 100 != 0){
+            System.out.println(" Leap year");
+        }
+        else{
+            System.out.println(" Not a Leap year");
+        }
+        return year;
+    }
+
+
+
+
 
 
 
