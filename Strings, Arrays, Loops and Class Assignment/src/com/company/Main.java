@@ -70,6 +70,8 @@ public class Main {
         // Question 8 : Write a program that prompts the user’s grade.
         // Your program should display the corresponding meaning of grade as per the following table
         // Grade Meaning: A. Excellent; B. Good; C. Average; D. Deficient; F. Failing
+
+        System.out.println("Question 8: Write a program that prompts the user’s grade.");
         String testResult;
         char grade;
 
@@ -93,7 +95,6 @@ public class Main {
             grade = 'F';
         }
 
-        System.out.println("Question 8: Write a program that prompts the user’s grade.");
         System.out.println(testResult + " is " + grade);
 
 
