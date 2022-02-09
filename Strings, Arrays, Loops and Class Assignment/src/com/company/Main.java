@@ -62,7 +62,10 @@ public class Main {
 
         //Question 7: Given two strings ransomNote and magazine,
         // return true if ransomNote can be constructed from magazine and false otherwise.
+        String magazine = "two plus three not equal to four.";
+        String ransomNote = "two plus two equals to four";
         System.out.println("Question 7: ransomNote.");
+        System.out.println(checkMagazine(ransomNote, magazine));
 
 
 
@@ -154,35 +157,20 @@ public class Main {
     //Question 7: Given two strings ransomNote and magazine,
     // return true if ransomNote can be constructed from magazine and false otherwise.
     // Each letter in magazine can only be used once in ransomNote.
-    private static void checkMagazine(String[] magazine, String[] note){
-        Map<String, Integer> magazineWords = new HashMap<>();
-        for(String word : magazine){
-            if(magazineWords.containsKey(word)){
-                int count = magazineWords.get(word);
-                count ++;
-                magazineWords.put(word, count);
-            }
-            else{
-                magazineWords.put(word, 1);
-            }
+    private static boolean checkMagazine(String ransomNote, String magazine){
+        HashMap<Character, Integer> counts = new HashMap<>();
+        for(char c : magazine.toCharArray()){
+            counts.put(c, counts.getOrDefault(c, 0) + 1);
         }
-        for(String word : note){
-            if(magazineWords.containsKey(word)){
-                int count = magazineWords.get(word);
-                if(count <= 0){
-                    System.out.println("No");
-                    return;
-                }
-                count --;
-                magazineWords.put(word, count);
+        for(char c : ransomNote.toCharArray()){
+            if(!counts.containsKey(c) || counts.get(c) <= 0){
+                return false;
             }
-            else if(!magazineWords.containsKey(word)){
-                System.out.println("No");
-                return;
+            counts.put(c, counts.get(c) - 1);
             }
+        return true;
         }
-        System.out.println("Yes");
-    }
+
 
 
 
