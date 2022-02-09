@@ -67,6 +67,38 @@ public class Main {
         System.out.println("Question 7: ransomNote.");
         System.out.println(checkMagazine(ransomNote, magazine));
 
+        // Question 8 : Write a program that prompts the user’s grade.
+        // Your program should display the corresponding meaning of grade as per the following table
+        // Grade Meaning: A. Excellent; B. Good; C. Average; D. Deficient; F. Failing
+        String testResult = "";
+        char grade;
+
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter a test result : ");
+        testResult = in.next();
+
+        if(testResult == "Excellent"){
+            grade = 'A';
+        }
+        else if(testResult == "Good"){
+            grade = 'B';
+        }
+        else if(testResult == "Average"){
+            grade = 'C';
+        }
+        else if(testResult == "Deficient"){
+            grade = 'D';
+        }
+        else{
+            grade = 'F';
+        }
+        System.out.println(testResult + " is " + grade);
+
+
+
+
+
+
 
 
 
@@ -170,6 +202,8 @@ public class Main {
             }
         return true;
         }
+
+
 
 
 
