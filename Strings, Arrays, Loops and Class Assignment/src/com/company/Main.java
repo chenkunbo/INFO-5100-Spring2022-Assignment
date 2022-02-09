@@ -1,10 +1,7 @@
 package com.company;
 
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
 
@@ -62,6 +59,12 @@ public class Main {
         int calls = 135;
         System.out.println("Question 6: Write a program to calculate the monthly telephone bills.");
         System.out.println(telBill(calls));
+
+        //Question 7: Given two strings ransomNote and magazine,
+        // return true if ransomNote can be constructed from magazine and false otherwise.
+
+
+
 
 
 
@@ -148,8 +151,38 @@ public class Main {
         return telBill;
     }
 
-
-
+    //Question 7: Given two strings ransomNote and magazine,
+    // return true if ransomNote can be constructed from magazine and false otherwise.
+    // Each letter in magazine can only be used once in ransomNote.
+    private static void checkMagazine(String[] magazine, String[] note){
+        Map<String, Integer> magazineWords = new HashMap<>();
+        for(String word : magazine){
+            if(magazineWords.containsKey(word)){
+                int count = magazineWords.get(word);
+                count ++;
+                magazineWords.put(word, count);
+            }
+            else{
+                magazineWords.put(word, 1);
+            }
+        }
+        for(String word : note){
+            if(magazineWords.containsKey(word)){
+                int count = magazineWords.get(word);
+                if(count <= 0){
+                    System.out.println("No");
+                    return;
+                }
+                count --;
+                magazineWords.put(word, count);
+            }
+            else if(!magazineWords.containsKey(word)){
+                System.out.println("No");
+                return;
+            }
+        }
+        System.out.println("Yes");
+    }
 
 
 
