@@ -57,7 +57,7 @@ public class Main {
         System.out.println(leapYear(year1));
         System.out.println(leapYear(year2));
 
-
+        // Question 6: Write a program to calculate the monthly telephone bills
 
 
 
@@ -121,7 +121,12 @@ public class Main {
         return year;
     }
 
-
+    // Question 6: Write a program to calculate the monthly telephone bills as per the following rule:
+    // Minimum $ 200 for up to 100 calls.
+    // Plus $ 0.60 per call for next 50 calls.
+    // Plus $ 0.50 per call for next 50 calls.
+    // Plus $ 0.40 per call for any call beyond 200 calls.
+    // Use Switch Statement in the function.
 
 
 
