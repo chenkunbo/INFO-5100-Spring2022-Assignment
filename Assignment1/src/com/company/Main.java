@@ -105,13 +105,14 @@ public class Main {
         // The Book class would have following private variables: String name; int bookID; String genres; double price;
         // Create a constructor to initialize the values. Create getters and setters for variables.
         Book book1, book2, book3;
-        book1 = new Book("Programming in Java", "678250887", "Computer Science", "150");
-        book2 = new Book("Harry Poter", "7892019227788", "Novel", "66");
-        book3 = new Book("Vogue", "7788236789", "Magazine", "30");
+        book1 = new Book("Programming in Java", 67825, "Computer Science", 150);
+        book2 = new Book("Harry Poter", 7892, "Novel", 66);
+        book3 = new Book("Vogue", 7788, "Magazine", 30);
 
-        System.out.println(book1);
-        System.out.println(book2);
-        System.out.println(book3);
+        book1.printBookInfo();
+        book2.printBookInfo();
+        book3.printBookInfo();
+
 
         // Question 10: Implement a class Box {double width; double height; double depth;}
         // Initialize the value through constructor. Write a function to calculate the box volume.
