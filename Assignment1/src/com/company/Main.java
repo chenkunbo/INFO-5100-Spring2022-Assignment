@@ -104,9 +104,14 @@ public class Main {
         // Question 9: Write a program to create a book class.
         // The Book class would have following private variables: String name; int bookID; String genres; double price;
         // Create a constructor to initialize the values. Create getters and setters for variables.
+        Book book1, book2, book3;
+        book1 = new Book("Programming in Java", "678250887", "Computer Science", "150");
+        book2 = new Book("Harry Poter", "7892019227788", "Novel", "66");
+        book3 = new Book("Vogue", "7788236789", "Magazine", "30");
 
-
-
+        System.out.println(book1);
+        System.out.println(book2);
+        System.out.println(book3);
 
 
 
