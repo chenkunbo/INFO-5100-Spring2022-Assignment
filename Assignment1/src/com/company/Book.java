@@ -26,4 +26,10 @@ public class Book {
     public void setGenres(String genres){_genres = genres;}
     public void setPrice(double price){_price = price;}
 
+    public String toString(){
+        return "Name: " + _name + "\n" + "BookID: " + _bookID + "\n" +
+                "Genres: " + _genres + "\n" + "Price: " + _price + "\n";
+    }
+
+
 }
