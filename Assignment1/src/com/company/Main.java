@@ -56,9 +56,37 @@ public class Main {
         System.out.println(leapYear(year2));
 
         // Question 6: Write a program to calculate the monthly telephone bills.
-        int calls = 135;
+        // Minimum $ 200 for up to 100 calls.
+        // Plus $ 0.60 per call for next 50 calls.
+        // Plus $ 0.50 per call for next 50 calls.
+        // Plus $ 0.40 per call for any call beyond 200 calls.
+        // Use Switch Statement in the function.
+
         System.out.println("Question 6: Write a program to calculate the monthly telephone bills.");
-        System.out.println(telBill(calls));
+        int nums = 135;
+        String operation = "100 < calls <= 150";
+
+        switch(operation){
+            case "calls <= 100" :
+                System.out.println("Monthly telephone bill" + " = $ ");
+                System.out.println(200);
+                break;
+            case "100 < calls <= 150" :
+                System.out.println("Monthly telephone bill" + " = $ ");
+                System.out.println(200 + 0.6 * (nums - 100));
+                break;
+            case "150 < calls <= 200" :
+                System.out.println("Monthly telephone bill" + " = $ ");
+                System.out.println(230 + 0.5 * (nums - 150));
+                break;
+            case "200 < calls" :
+                System.out.println("Monthly telephone bill" + " = $ ");
+                System.out.println(255 + 0.4 * (nums - 200));
+                break;
+
+        }
+
+        //        System.out.println(telBill(calls));
 
         // Question 7: Given two strings ransomNote and magazine,
         // return true if ransomNote can be constructed from magazine and false otherwise.
