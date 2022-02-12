@@ -55,6 +55,7 @@ public class Main {
         System.out.println(leapYear(year1));
         System.out.println(leapYear(year2));
 
+
         // Question 6: Write a program to calculate the monthly telephone bills.
         // Minimum $ 200 for up to 100 calls.
         // Plus $ 0.60 per call for next 50 calls.
@@ -85,8 +86,8 @@ public class Main {
                 break;
 
         }
-
         //        System.out.println(telBill(calls));
+
 
         // Question 7: Given two strings ransomNote and magazine,
         // return true if ransomNote can be constructed from magazine and false otherwise.
@@ -94,7 +95,6 @@ public class Main {
         String ransomNote = "two plus two equals to four";
         System.out.println("Question 7: ransomNote.");
         System.out.println(checkMagazine(ransomNote, magazine));
-
 
 
         // Question 8 : Write a program that prompts the user’s grade.
@@ -158,7 +158,7 @@ public class Main {
 
     }
 
-    /// region assignment code
+    /// region assignment private code
     // Question2: Write a program to check if a string has all unique characters.
     private static boolean hasUniqueChars(String str){
         Set<Character> set = new HashSet<>();
