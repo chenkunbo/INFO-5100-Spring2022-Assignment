@@ -18,4 +18,10 @@ public class Box {
 
 
 
+    public void printBoxInfo() {
+        System.out.println("*************");
+        System.out.println("Box volume is : " + _width*_height*_depth);
+    }
+
+
 }

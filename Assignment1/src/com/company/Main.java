@@ -109,6 +109,8 @@ public class Main {
         book2 = new Book("Harry Poter", 7892, "Novel", 66);
         book3 = new Book("Vogue", 7788, "Magazine", 30);
 
+        System.out.println("Question 9: Write a program to create a book class.");
+
         book1.printBookInfo();
         book2.printBookInfo();
         book3.printBookInfo();
@@ -116,8 +118,14 @@ public class Main {
 
         // Question 10: Implement a class Box {double width; double height; double depth;}
         // Initialize the value through constructor. Write a function to calculate the box volume.
+        Box box1, box2;
+        box1 = new Box(12, 23, 6);
+        box2 = new Box(2, 6, 7);
 
+        System.out.println("Question 10: Implement a class Box. Write a function to calculate the box volume.");
 
+        box1.printBoxInfo();
+        box2.printBoxInfo();
 
 
     }
