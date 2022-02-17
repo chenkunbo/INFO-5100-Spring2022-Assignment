@@ -1,4 +1,4 @@
-package Question_2_Classes_Constructor;
+package Question_2_Shape_Inheritance;
 
 public class Triangle extends Shape{
 

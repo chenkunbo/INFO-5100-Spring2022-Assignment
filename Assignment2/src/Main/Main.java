@@ -1,6 +1,9 @@
 package Main;
 
 import Question_1_Copy_Constructor.Student;
+import Question_3_shapeTester.Circle;
+import Question_3_shapeTester.Rectangle;
+import Question_3_shapeTester.Shape;
 
 public class Main {
 
@@ -16,6 +19,25 @@ public class Main {
         System.out.println(" Roll number of the second student: "+     student2.printRoll());
         System.out.println(" Name of the second student: "+ student2.printName());
 
+        // Question3: Class shapeTester
+        Shape s = new Shape();
+        Rectangle r = new Rectangle(2.0, 3.0);
+        Circle c = new Circle(4.0);
+
+        r.computeArea();
+        r.computePerimeter();
+        c.computeArea();
+        c.computePerimeter();
+        r.display();
+        c.display();
+        s.display();
     }
+
+
+
+
+
+
 }
+
 
