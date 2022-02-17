@@ -30,10 +30,16 @@ public class Rhombus extends Shape{
         this.diagonal_d2 = diagonal_d2;
     }
 
+    // 4. Override the getArea() and getPerimeter() getter methods of Shape to give desired output
+    @Override
+    public double getArea() {
+        return super.getArea();
+    }
 
-
-
-
+    @Override
+    public double getPerimeter() {
+        return super.getPerimeter();
+    }
 
 
 }
