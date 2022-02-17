@@ -4,15 +4,15 @@ public class Circle extends Shape{
 
     public double radius;
 
-    public Circle(double v){
+    public Circle(double radius){
         this.radius = radius;
     }
 
     public Circle(String name, double area, double perimeter, double radius) {
         super(name, area, perimeter);
         this.radius = radius;
-    }
 
+    }
 
     public double computeArea() {
         return 3.14*radius*radius;
@@ -24,7 +24,6 @@ public class Circle extends Shape{
     }
 
     public void display(){
-
         System.out.println("Area : " + computeArea());
         System.out.println("Perimeter : " + computePerimeter());
     }

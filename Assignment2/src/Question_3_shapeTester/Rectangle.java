@@ -16,6 +16,7 @@ public class Rectangle extends Shape{
         this.width = width;
     }
 
+
     public double computeArea() {
         return length*width;
     }
@@ -25,7 +26,6 @@ public class Rectangle extends Shape{
     }
 
     public void display(){
-        System.out.println("Name : " + new Shape());
         System.out.println("Area : " + computeArea());
         System.out.println("Perimeter : " + computePerimeter());
     }

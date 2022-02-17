@@ -2,8 +2,8 @@ package Question_3_shapeTester;
 
 public class Shape {
 
-    public String name;
-    public double area;
+    private String name;
+    private double area;
     public double perimeter;
 
     public Shape() {
