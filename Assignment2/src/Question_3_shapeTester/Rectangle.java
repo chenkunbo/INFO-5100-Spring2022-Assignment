@@ -1,26 +1,33 @@
 package Question_3_shapeTester;
 
-public class Rectangle {
+public class Rectangle extends Shape{
 
     public double length;
     public double width;
-
-    public Rectangle(){
-    }
 
     public Rectangle(double length, double width){
         this.length = length;
         this.width = width;
     }
 
-
-    public void computeArea() {
+    public Rectangle(String name, double area, double perimeter, double length, double width) {
+        super(name, area, perimeter);
+        this.length = length;
+        this.width = width;
     }
 
-    public void computePerimeter() {
+    public double computeArea() {
+        return length*width;
     }
 
-    public void display() {
+    public double computePerimeter() {
+        return 2*(length+width);
+    }
+
+    public void display(){
+        System.out.println("Name : " + new Shape());
+        System.out.println("Area : " + computeArea());
+        System.out.println("Perimeter : " + computePerimeter());
     }
 
 }
