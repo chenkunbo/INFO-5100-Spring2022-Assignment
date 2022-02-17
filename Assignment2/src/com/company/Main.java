@@ -2,8 +2,6 @@ package com.company;
 
 import Question_1_Copy_Constructor.Student;
 
-import static jdk.internal.logger.DefaultLoggerFinder.SharedLoggers.system;
-
 public class Main {
 
     public static void main(String[] args) {

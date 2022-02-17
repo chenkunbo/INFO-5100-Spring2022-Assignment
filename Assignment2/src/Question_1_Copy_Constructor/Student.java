@@ -28,8 +28,10 @@ public class Student {
     }
 
 
-
-
-
-
+    public int printRoll() {
+        return rollNumber;
+    }
+    public String printName() {
+        return name;
+    }
 }
