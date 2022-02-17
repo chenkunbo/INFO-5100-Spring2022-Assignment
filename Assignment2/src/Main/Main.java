@@ -1,4 +1,4 @@
-package com.company;
+package Main;
 
 import Question_1_Copy_Constructor.Student;
 

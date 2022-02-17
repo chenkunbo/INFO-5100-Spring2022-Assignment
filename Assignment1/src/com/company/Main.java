@@ -219,23 +219,12 @@ public class Main {
     // Plus $ 0.50 per call for next 50 calls.
     // Plus $ 0.40 per call for any call beyond 200 calls.
     // Use Switch Statement in the function.
-    private static double telBill(int calls){
-        double telBill = 0;
-        if(calls <= 100){
-            telBill = 200;
-        }
-        else if(calls <= 150){
-            telBill = 200 + 0.60 * ( calls - 100 );
-        }
-        else if(calls <= 200){
-            telBill = 200 + 0.60 * 50 + 0.50 * ( calls - 150 );
-        }
-        else{
-            telBill = 200 + 0.60 * 50 + 0.50 * 50 + 0.40 * ( calls - 200);
-        }
 
-        return telBill;
-    }
+    // Wrote in the Main.
+
+
+
+
 
     //Question 7: Given two strings ransomNote and magazine,
     // return true if ransomNote can be constructed from magazine and false otherwise.
