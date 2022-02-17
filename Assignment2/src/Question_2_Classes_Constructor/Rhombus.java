@@ -13,6 +13,10 @@ public class Rhombus extends Shape{
         this.diagonal_d2 = diagonal_d2;
     }
 
+    public void diagonal_d1(){
+        System.out.println("both diagonals have the same length");
+    }
+
     // 3. Getters and Setters
     public double getDiagonal_d1() {
         return diagonal_d1;

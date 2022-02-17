@@ -13,6 +13,10 @@ public class Triangle extends Shape{
         this.height = height;
     }
 
+    public void side(){
+        System.out.println("If the single side is given then all sides to the same value.");
+    }
+
     // 3. Getters and Setters
     public double getBase() {
         return base;
