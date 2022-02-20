@@ -39,10 +39,7 @@ public class Person {
     }
 
     public void printPerson() {
-        System.out.println("*************");
-        System.out.println("Name: " + name);
-        System.out.println("ID: " + id);
-        System.out.println("Age: " + age);
+
 
     }
 

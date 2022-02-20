@@ -1,14 +1,17 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class Student extends Person{
 
     // 1. Fields
     public String takeQuiz;
+    private ArrayList<Student> students;
 
     // 2. Constructor
-    public Student(String takeQuiz, String name, int id, int age) {
+    public Student(String name, int id, int age) {
         super(name, id, age);
-        this.takeQuiz = takeQuiz;
+
     }
 
 
@@ -21,9 +24,21 @@ public class Student extends Person{
     }
 
     // 3. Function
-    public void takeQuiz(){
-        System.out.println("Student" + this.getTakeQuiz() + "finished Quiz" + takeQuiz);
+    public void takeQuiz(Professor professor){
+        System.out.println("Student" + this.getName() + "finished Quiz" + takeQuiz);
     }
 
+    public void subscribe(Professor professor){
+        this.takeQuiz = takeQuiz;
+        if(! professor.students.contains(this)){
+            this.students = new ArrayList<>();
+        }
+    }
+
+    public void unsubscribe(Professor professor){
+        this.takeQuiz = takeQuiz;
+        professor.students.remove(this);
+
+    }
 
 }
