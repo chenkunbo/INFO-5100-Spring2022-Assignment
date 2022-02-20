@@ -19,7 +19,4 @@ public class Shape {
         System.out.println("****************");
     }
 
-
-
-
 }
