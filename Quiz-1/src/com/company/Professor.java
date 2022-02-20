@@ -11,10 +11,20 @@ public class Professor extends Person{
         this.quiz = quiz;
     }
 
-    // 3. Function
-    public void Quiz(){
-        System.out.println("Give Quiz : ");
+    public String getQuiz() {
+        return quiz;
     }
+
+    public void setQuiz(String quiz) {
+        this.quiz = quiz;
+    }
+
+    // 3. Function
+    public void giveQuiz(String quiz){
+        System.out.println("Professor" + this.getQuiz() + "published Quiz" + quiz);
+    }
+
+
 
 
 }

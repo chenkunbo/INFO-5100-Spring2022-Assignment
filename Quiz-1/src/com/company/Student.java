@@ -11,9 +11,18 @@ public class Student extends Person{
         this.takeQuiz = takeQuiz;
     }
 
+
+    public String getTakeQuiz() {
+        return takeQuiz;
+    }
+
+    public void setTakeQuiz(String takeQuiz) {
+        this.takeQuiz = takeQuiz;
+    }
+
     // 3. Function
     public void takeQuiz(){
-        System.out.println("Take Quiz : ");
+        System.out.println("Student" + this.getTakeQuiz() + "finished Quiz" + takeQuiz);
     }
 
 
