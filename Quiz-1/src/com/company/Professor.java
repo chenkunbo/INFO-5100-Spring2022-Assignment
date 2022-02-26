@@ -12,7 +12,7 @@ public class Professor extends Person{
     // 2. Constructor
     public Professor(String name, int id, int age) {
         super(name, id, age);
-        this.quiz = quiz;
+
     }
 
     public String getQuiz() {
@@ -24,18 +24,17 @@ public class Professor extends Person{
     }
 
     // 3. Function
-    //public void giveQuiz(String quiz){
-    //    System.out.println("Professor" + this.getQuiz() + "published Quiz" + quiz);
-    //}
-
-
     public void giveQuiz(String quiz){
-        this.quiz = quiz;
-        for(Student students: students){
-            students.takeQuiz(this);
-
-        }
+        System.out.println("Professor " + this.getName() + "published Quiz: " + quiz);
     }
+
+
+    //public void giveQuiz(String quiz){
+    //    this.quiz = quiz;
+    //    for(Student students: students){
+    //        students.takeQuiz(this);
+    //    }
+    //}
 
 
 
