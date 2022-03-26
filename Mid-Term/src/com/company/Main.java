@@ -4,6 +4,7 @@ import Question_1.Student;
 import Question_3.Happy;
 import Question_3.Moody;
 import Question_3.Sad;
+import Question_5.Camera;
 
 public class Main {
 
@@ -33,6 +34,20 @@ public class Main {
         Moody happy = new Happy(" ", " ");
 
         System.out.println();
+
+
+        //Question_5
+        Camera cam1 = Camera.getInstance();
+
+        cam1.setCameraName("Camera 1");
+
+        Camera cam2 = Camera.getInstance();
+        System.out.println(cam1.getCameraName());
+        System.out.println(cam2.getCameraName());
+
+        cam2.setCameraName("Camera 2");
+        System.out.println(cam1.getCameraName());
+        System.out.println(cam2.getCameraName());
 
 
     }
