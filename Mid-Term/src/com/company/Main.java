@@ -15,7 +15,6 @@ public class Main {
         gabby.setName("Gabby");
         gabby.setStudentID(8);
 
-        System.out.println("");
 
     }
 
