@@ -6,6 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        //Question_1
         Student sample = new Student();
         Student kunbo = new Student(sample);
         kunbo.setName("Kunbo");
