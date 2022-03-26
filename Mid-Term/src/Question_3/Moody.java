@@ -4,6 +4,10 @@ public abstract class Moody implements Psychiatrist{
 
     private String Mood;
 
+    public Moody() {
+
+    }
+
     public String getMood() {
         return Mood;
     }
@@ -17,7 +21,7 @@ public abstract class Moody implements Psychiatrist{
     }
 
     public void queryMood(){
-        System.out.println(this.getClass() + " : " + this.getMood() + "I feel Happy(or Sad) today!!");
+        System.out.println(this.getClass() + " : " + this.getMood() + "How are you feeling today?");
     }
 
 

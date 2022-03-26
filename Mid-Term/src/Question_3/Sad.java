@@ -20,6 +20,7 @@ public class Sad extends Moody{
     }
 
     public void ExpressFeelings(){
+        System.out.println("I feel sad today!");
         System.out.println("heeehee....hahahah...HAHAHA!!");
     }
 

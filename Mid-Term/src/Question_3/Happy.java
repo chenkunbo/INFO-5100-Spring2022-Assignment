@@ -8,7 +8,7 @@ public class Happy extends Moody{
         this.happy = happy;
     }
 
-    public String getSad() {
+    public String getHappy() {
         return happy;
     }
 
@@ -18,6 +18,7 @@ public class Happy extends Moody{
     }
 
     public void ExpressFeelings(){
+        System.out.println("I feel happy today!");
         System.out.println("heeehee....hahahah...HAHAHA!!");
     }
 
