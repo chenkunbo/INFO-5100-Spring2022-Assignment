@@ -1,8 +1,12 @@
 package Question_3;
 
-public interface Psychiatrist {
-    void examine(String Mood);
-    void observe(String Mood);
+public class Psychiatrist {
+    public void examine(Moody Object) {
 
+    }
+
+    public void observe(Moody Object){
+
+    }
 
 }

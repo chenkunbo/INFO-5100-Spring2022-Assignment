@@ -23,11 +23,7 @@ public class Main {
 
         //Question_3
         Moody mood = new Moody() {
-            @Override
-            public void examine(String Mood) {}
 
-            @Override
-            public void observe(String Mood) {}
         };
 
         Moody sad = new Sad(" ", " ");

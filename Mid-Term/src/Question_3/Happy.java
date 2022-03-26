@@ -28,13 +28,4 @@ public class Happy extends Moody{
     }
 
 
-    @Override
-    public void examine(String Mood) {
-
-    }
-
-    @Override
-    public void observe(String Mood) {
-
-    }
 }

@@ -1,6 +1,6 @@
 package Question_3;
 
-public abstract class Moody implements Psychiatrist{
+public abstract class Moody extends Psychiatrist{
 
     private String Mood;
 
