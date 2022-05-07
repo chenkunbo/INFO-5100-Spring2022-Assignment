@@ -1,0 +1,5 @@
+
+n
+java:S1104	"SMake objLock a static final constant or non-public and provide accessors if needed.(ıÜ®ûÿÿÿÿ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(œ²‹îşÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÁÜá¶üÿÿÿÿ
